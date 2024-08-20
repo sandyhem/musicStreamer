@@ -1,0 +1,266 @@
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(13, 8, 55);
+    color:white;
+}
+.main{
+    display:flex;
+   
+    flex-direction: column;
+}
+.main .body{
+    flex:1;
+    display:flex;
+    flex-direction: row;
+  
+    height:80%;
+    width:100%;
+}
+
+/*working on the side bar*/
+.body .sidebar{
+flex:1;
+position: fixed;
+max-height:90vh;
+
+overflow: auto;
+}
+.body .sidebar::-webkit-scrollbar{
+    overflow: hidden;
+}
+.body .sidebar li{
+list-style-type: none;
+margin:15px;
+}
+.body .sidebar a{
+text-decoration: none;
+}
+.body .sidebar .recents .rsongs img{
+    width:50px;
+}
+.body .sidebar .recents .rsongs{
+display:flex;
+padding:5px;
+}
+.body .sidebar .recents .rsongs p{
+    padding:5px;
+}
+
+/*THIS IS COMPLETED SIDE BAR*/
+/*-------------------------------------------------------------*/
+/*here starts the content bar*/
+/*.body .content{
+flex:1; 
+width:100%;
+display: flex;
+flex-direction: column;
+max-height: 100vh;
+} 
+.body .content .header{
+    flex:1;
+   
+    
+}
+.body .content .toptrends{
+    flex:1;
+    max-height:30vh;
+    max-width: 100%;
+   
+    display: flex;
+    overflow:auto;
+}
+
+.body .content .toptrends::-webkit-scrollbar{
+overflow:hidden;
+}
+.body .content .toptrends .songs img{
+    width:100%;
+}
+
+.body .content .topartists{
+    flex:1;
+   
+}
+
+*/
+
+/*-------------------------------------------------------------------*/
+/*here starts the music player*/
+.main .bottomplayer{
+flex:1;
+display:grid;
+position:fixed;
+bottom:1px;
+grid-template-columns:50px 1fr 3fr 1fr;
+border: 1px solid white;
+width:100%;
+}
+.main .bottomplayer .mlogo{
+display:flex;
+gap:3px;
+align-items: center;
+padding:10px;
+}
+.main .bottomplayer .mlogo .line{
+  flex:1;
+  width:5px;
+  height:30px;
+  border-radius:20px;
+  background-color: white;
+}
+.main .bottomplayer .img{
+    flex:1;
+   
+    display:flex;
+    align-items: center;
+}
+.main .bottomplayer .photo{
+ flex:1;
+}
+.main .bottomplayer .name{
+    flex:1;
+}
+.main .bottomplayer .like{
+    flex:1;
+}
+.main .bottomplayer .img img{
+    width:50px;
+}
+.main .bottomplayer .range{
+    flex:1;
+    border: 1px solid white;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main .bottomplayer .range .controls{
+    flex:1;
+    margin:10px;
+    display:flex;
+    gap:20px;
+    align-items: center;
+}
+.main .bottomplayer .range .controls .queue{
+flex:1;  
+
+}
+.main .bottomplayer .range .controls .back{
+    flex:1;  
+}
+.main .bottomplayer .range .controls .play{
+    flex:1; 
+  border: 1px solid white;
+  width:100px;
+  height:36px;
+  border-radius: 50%;
+  text-align: center;
+ line-height:35px;
+}
+.main .bottomplayer .range .controls .next{
+    flex:1; 
+}
+.main .bottomplayer .range .controls .loop{
+    flex:1; 
+}
+.main .bottomplayer .range .controls .loop,.queue,.back,.next i{
+    font-size: 20px;
+}
+
+
+.main .bottomplayer .range .progress{
+    flex:1;
+}
+.main .bottomplayer .range .progress input{
+    width:50rem;
+}
+.main .bottomplayer .range .controls i{
+    cursor:pointer;
+}
+/*here starts the content*/
+.main .body .content {
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    margin-left:250px;
+    margin-bottom:50px;
+}
+.main .body .content .head{
+    height:200px;
+   position:fixed;
+   width:100%;
+   border: 1px solid white;
+   height:250px;
+   top:0px;
+}
+.main .body .content .list{
+margin-top: 200px;
+display: flex;
+flex-direction: row;
+flex:1;
+overflow: auto;
+
+}
+.main .body .content .list::-webkit-scrollbar{
+    width:0;
+    overflow:hidden;
+}
+.main .body .content .boxes{
+    display: flex;
+    flex-direction: column;
+    padding:50px;
+    flex:0.5;
+   
+}
+.main .body .content .list .boxes .box{
+    display: flex;
+    align-items: center;
+    border:1px solid white;
+   border-radius: 25px;
+   gap:20px;
+    height: 100px;
+}
+.main .body .content .list .boxes .box i{
+    cursor:pointer;
+    font-size: 20px;
+}
+.main .body .content .list .boxes .box p{
+    cursor:pointer;
+}
+.main .body .content .list .boxes .box .img img{
+    width:80%;
+}
+.main .body .content .list .boxes .box .img{
+    width:40px;
+    margin-left: 20px;
+    
+}
+
+.main .body .content .list .mainplayer{
+height:400px;
+width:600px;
+ position: fixed;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ flex:2;
+ padding:12px;
+outline:1px solid yellow;
+ left:900px;
+bottom:90px;
+}
+.main .body .content .list .mainplayer .mimage img{
+    width:100%;
+}
+.main .body .content .list .mainplayer .mimage{
+    min-width:300px;
+    max-width:300px;
+    min-height:300px;
+    max-height:300px;
+    overflow: hidden;
+}
+/*---------------------------------------------------------*/
+  .content .head{
+   background-image:url("musical.jpg");
+  }

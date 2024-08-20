@@ -1,0 +1,32 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.main{
+  display: flex;
+}
+.main .side{
+    padding:10px;
+    border:1px solid black;
+    height:100vh;
+    width:200px;
+}
+.main .side li{
+    list-style-type: none;
+    padding:12px;
+}
+.main .side a{
+    text-decoration: none;
+}
+.main .content{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+}
+.main .content .header{
+    border: 1px solid blue;
+}
+.main .content .playlist{
+    border:1px solid black;
+}
